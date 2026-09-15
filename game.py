@@ -9,4 +9,4 @@ class Game:
         self.display_surface = pygame.display.get_surface()
 
     def run(self):
-        self.display_surface.blit(self.surface, (0, 0))
+        self.display_surface.blit(self.surface, (PADDING, PADDING))

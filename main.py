@@ -23,6 +23,8 @@ class Main:
             # display
             self.display_surface.fill(GRAY)
 
+            self.game.run()
+
             # update the game
             pygame.display.update()
             self.clock.tick()
