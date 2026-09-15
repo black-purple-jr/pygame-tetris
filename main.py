@@ -1,5 +1,7 @@
-from settings import *
 from sys import exit
+
+from settings import *
+from game import Game
 
 
 class Main:
@@ -9,6 +11,7 @@ class Main:
         self.display_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
         self.clock = pygame.time.Clock()
         pygame.display.set_caption("Tetris")
+        self.game = Game()
 
     def run(self):
         while True:
