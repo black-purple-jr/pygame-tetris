@@ -1,7 +1,8 @@
 from sys import exit
-
 from settings import *
+
 from game import Game
+from score import Score
 
 
 class Main:
@@ -12,6 +13,7 @@ class Main:
         self.clock = pygame.time.Clock()
         pygame.display.set_caption("Tetris")
         self.game = Game()
+        self.score = Score()
 
     def run(self):
         while True:
@@ -24,6 +26,7 @@ class Main:
             self.display_surface.fill(GRAY)
 
             self.game.run()
+            self.score.run()
 
             # update the game
             pygame.display.update()
